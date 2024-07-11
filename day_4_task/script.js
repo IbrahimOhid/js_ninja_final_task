@@ -9,13 +9,16 @@ let goingToBeDesigners = null; // null
 
 // Ans: 2
 // concatenation format
-const myPersonalInfo = 'Hey it\'s me Mohammad Ibrahim . I am 30.you can contact me by this ibrahim@gmail.com.I am a Developer and it\'s true . I am going to be a Designer - undefined'
+const myPersonalInfo = " Hey it's me" + currentName + " . I am " + age + " .you can contact me by this " + email +".I am a Developer and it's " + isDeveloper + " . I am going to be a Designer - " + goingToBeDesigner + " ";
 console.log(myPersonalInfo);
 // template string format
 const myInfo = `Hey it's me ${currentName}. I am ${age}.you can contact me by this ${email}.I am a Developer and it's ${isDeveloper}. I am going to be a Designer- ${goingToBeDesigner}`
 console.log(myInfo);
 
 // Ans: 3
+var a = 10;
+var a = 30;
+console.log(a); // no error
 let product = 'shoe';
  product = 'watch'; // no error
 console.log(product);
