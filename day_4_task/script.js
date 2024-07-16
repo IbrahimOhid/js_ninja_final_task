@@ -37,6 +37,6 @@ const price = null; // null - Declare null given the variable value.
 // typeof NaN is a number because it is a numeric value.
 
 // Ans: 6
-let MangoPrice = 100;
-console.log(MangoPrice);
+let thing;
+
 
