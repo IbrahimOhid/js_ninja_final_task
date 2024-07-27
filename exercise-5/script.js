@@ -29,14 +29,14 @@ if (age < 10) {
 } else if (age >= 15 && age < 18) {
   console.log("prepare to cast vote");
 } else if (age >= 18) {
-  console.log("cast you vote");
+  console.log("cast you vote"); // cast you vote
 } else {
   console.log("You are out of range");
 }
 
 // switch statement
 const age = 18;
-switch (age) {
+switch (true) {
   case age < 10:
     console.log("stay home under your mom supervision");
     break;
@@ -47,7 +47,7 @@ switch (age) {
     console.log("prepare to cast vote");
     break;
   case age >= 18:
-    console.log("cast you vote");
+    console.log("cast you vote"); // cast you vote
     break;
   default:
     console.log("You are out of range");
@@ -103,7 +103,7 @@ console.log(1 === 1); // true
 // Choose the correct conditional (ternary) operator to console  "Too young" if age is less than 18, otherwise alert "Old enough" (2) ⤵
 
 const age = 16;
-const result = age < 18 ? "Too young" : "Old enough";
+const result = true < 18 ? "Too young" : "Old enough";
 console.log(result); // "Too young"
 
 // Ans: 6 ⤵
