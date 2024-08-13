@@ -48,13 +48,52 @@
 
 // Ans: 5
 
-function repeat(n){
-    for(let i = 1; i <= n; i++){
-        for(let j = 1; j <= i; j++){
-            document.write('$')
+// function repeat(n){
+//     for(let i = 1; i <= n; i++){
+//         for(let j = 1; j <= i; j++){
+//             document.write('$')
+//         }
+//         document.write('<br>')
+//     }
+// }
+// repeat(3);
+// repeat(5);
+
+// Ans: 6
+function fizzBuzz(num){
+    for(let i = 1; i <= num; i++){
+        if(i % 3 === 0 && i % 5 === 0){
+            console.log('FizzBuzz');
         }
-        document.write('<br>')
+        else if(i % 3 === 0){
+            console.log('Fizz');
+        }
+        else if(i % 5 === 0){
+            console.log('Buzz');
+        }
+        else{
+            console.log(i);
+        }
+        
     }
+    }
+    fizzBuzz(100)
+
+// Ans: 7
+
+function myFunction(a, b) 
+{
+    let count = 0
+    for(let i = 0; i < b.length; i++){
+        if(a === b[i]){
+            count += 1;
+        }
+        
+    }
+    return count;
 }
-repeat(3);
-repeat(5)
+
+console.log(myFunction('m', 'how many times does the character occur in this sentence?')); 
+console.log(myFunction('h', 'how many times does the character occur in this sentence?')) //4
+console.log(myFunction('?', 'how many times does the character occur in this sentence?')) //1
+console.log(myFunction('z', 'how many times does the character occur in this sentence?')) //0
