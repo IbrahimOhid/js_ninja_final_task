@@ -50,7 +50,11 @@ function sumEvenArgs(){
 Exercise: 4 (4)
 you have given a object with some nested properties and method , you have to access the property and method in single statement(using destructuring)
 
+Exercise: 4 (4)
+you have given a object with some nested properties and method , you have to access the property and method in single statement(using destructuring)
+
 Access city, getAddress from the object and console the output - 2
+Get the correct output form by getAddress function calling .Ex: Dhaka-Bangladesh -2
 Get the correct output form by getAddress function calling .Ex: Dhaka-Bangladesh -2
 
 
@@ -70,7 +74,7 @@ const obj = {
   },
 }
 
-
+const {address:{location:{country:{city}}}} = obj;
 
 /*
 Exercise: 5 (3)
