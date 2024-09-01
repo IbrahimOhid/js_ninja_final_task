@@ -11,12 +11,11 @@ const result = olLiEle.querySelector('.third'); */
 /* e =>const container = document.querySelector('#container');
 container.textContent = 'Hello !' */
 
-
 /*f => const footer = document.querySelector('.footer');
 footer.classList.add('main'); */
 
 /*g => const footer = document.querySelector('.footer');
-footer.classList.remove(); */
+footer.remove(); 
 
 /*h => const olList = document.querySelector('ol');
 const newLi = document.createElement('li');
@@ -40,4 +39,14 @@ newLi.classList.add('five'); */
 
 /* l => const footer = document.querySelector('.footer')
 footer.remove('div'); */
+
+
+
+
+
+//Ans: 3
+// => Capturing  – the event goes down to the element. 
+// => Bubbling – the event bubbles up from the element.
+
+//Ans: 4
 
