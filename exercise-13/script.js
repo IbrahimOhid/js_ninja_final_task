@@ -1,52 +1,26 @@
-// Ans: 1
-//a => const container = document.getElementById('container');
-
-//b => const container = document.querySelector('#container');
-
-//c => const secondLi = document.querySelectorAll('.second');
-
-/*d => const olLiEle = document.querySelector('ol');
-const result = olLiEle.querySelector('.third'); */
-
-/* e =>const container = document.querySelector('#container');
-container.textContent = 'Hello !' */
-
-/*f => const footer = document.querySelector('.footer');
-footer.classList.add('main'); */
-
-/*g => const footer = document.querySelector('.footer');
-footer.remove(); 
-
-/*h => const olList = document.querySelector('ol');
-const newLi = document.createElement('li');
-olList.appendChild(newLi); */
-
-/* i => const olList = document.querySelector('ol');
-const newLi = document.createElement('li');
-olList.appendChild(newLi); 
-newLi.textContent = 'four'; */
-
-/* j => const olList = document.querySelector('ol');
-const newLi = document.createElement('li');
-newLi.textContent = 'five';
-olList.appendChild(newLi);
-newLi.classList.add('five'); */
-
-// const olList = document.querySelector('ol');
-// olList.forEach((elm) => {
-  
-// })
-
-/* l => const footer = document.querySelector('.footer')
-footer.remove('div'); */
+function timeCount(){
+    const date = new Date();
+console.log(date);
+// hour select
+const hour = document.querySelector('#hour');
+// const hours = (date.getHours() >= 12) ? '0' + date.getHours() : date.getHours();
+const hours = date.getHours();
+hour.textContent = hours;
+// minute select
+const minute = document.querySelector('#minute');
+const minutes = (date.getMinutes() < 10) ? '0' + date.getMinutes() : date.getMinutes();
+minute.textContent = minutes;
 
 
+// second select
+const second = document.querySelector('#second');
+const seconds = (date.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds();
+second.textContent = seconds;
 
+// am_pm select
+const hour_change = document.querySelector('#hour_change');
+const formatHour = (date.getHours() >= 12) ? "PM" : "AM";
+hour_change.textContent = formatHour;
+}
 
-
-//Ans: 3
-// => Capturing  – the event goes down to the element. 
-// => Bubbling – the event bubbles up from the element.
-
-//Ans: 4
-
+setInterval(timeCount, 1000)
